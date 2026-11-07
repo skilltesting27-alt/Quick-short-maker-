@@ -2,6 +2,7 @@
 name: Build Quick Short Maker APK
 
 on:
+push
   workflow_dispatch:
   push:
     paths:

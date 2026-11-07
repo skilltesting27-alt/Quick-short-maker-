@@ -29,12 +29,6 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-        with:
-             args: '--licenses'
-      - name: Extract source
-        run: |
-          unzip -q Quick_Short_Maker_Android_Source_v3.zip
-          yes | sdkmanager --licenses || true
 
       - name: Build APK
         run: gradle -p QuickShortMaker assembleDebug

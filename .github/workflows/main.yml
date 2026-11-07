@@ -1,7 +1,7 @@
 name: Build Quick Short Maker APK
 on:
-  push:
-  paths:   
+push:
+    paths:
   workflow_dispatch:
     - 'Quick_Short_Maker_Android_Source_v3.zip'  
                 -'.github/workflows/android.yml'

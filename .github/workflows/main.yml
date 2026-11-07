@@ -1,13 +1,15 @@
+
 name: Build Quick Short Maker APK
+
 on:
-push:
-  paths:
   workflow_dispatch:
-    - 'Quick_Short_Maker_Android_Source_v3.zip'  
-                -'.github/workflows/android.yml'
+  push:
+    paths:
+      - 'Quick_Short_Maker_Android_Source_v3.zip'
+      - '.github/workflows/android.yml'
 
 jobs:
-  build: 
+  build:
     runs-on: ubuntu-latest
 
     steps:

@@ -28,7 +28,7 @@ jobs:
           gradle-version: '8.9'
 
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v3 background
+        uses: android-actions/setup-android@v3
         with:
              args: '--licenses'
       - name: Extract source
